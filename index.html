@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kreator zestawu komputerowego</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Kreator zestawu komputerowego</h1>
+	<form method="post" action="dokument_zamowienia.php">
+		<label for="procesor">Procesor:</label>
+		<select name="procesor" id="procesor">
+			<option value="i3">Intel Core i3</option>
+			<option value="i5">Intel Core i5</option>
+			<option value="i7">Intel Core i7</option>
+			<option value="ryzen3">AMD Ryzen 3</option>
+			<option value="ryzen5">AMD Ryzen 5</option>
+			<option value="ryzen7">AMD Ryzen 7</option>
+		</select>
+		<br>
+		<label for="ram">RAM:</label>
+		<select name="ram" id="ram">
+			<option value="4gb">4 GB</option>
+			<option value="8gb">8 GB</option>
+			<option value="16gb">16 GB</option>
+			<option value="32gb">32 GB</option>
+		</select>
+		<br>
+		<label for="dysk">Dysk twardy:</label>
+		<select name="dysk" id="dysk">
+			<option value="hdd">HDD</option>
+			<option value="ssd">SSD</option>
+			<option value="sshd">SSHD</option>
+		</select>
+		<br>
+		<label for="grafika">Karta graficzna:</label>
+		<select name="grafika" id="grafika">
+			<option value="integrated">Zintegrowana</option>
+			<option value="nvidia">Nvidia</option>
+			<option value="amd">AMD</option>
+		</select>
+		<br>
+		<input type="submit" value="Zamow">
+	</form>
+</body>
+</html>
